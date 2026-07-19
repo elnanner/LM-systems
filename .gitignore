@@ -141,3 +141,9 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# LM Systems — backlog y reglas de mentoría, solo de referencia local.
+# Nunca se suben al repo remoto.
+CLAUDE.md
+docs/
+scripts/

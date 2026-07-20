@@ -1,0 +1,25 @@
+ .productCard {
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+     padding: 1rem;
+     color: #5a6269;
+     transition: color ease-in-out 0.3s;
+
+     
+     &:hover {
+         color: #062d54;
+     }
+ }
+
+ .titulo {
+     font-weight: 700;
+     font-size: 1.1rem;
+ }
+
+ .descripcion {
+     font-size: 0.8rem;
+     color: #a9c1da;
+     margin: 0;
+     max-width: 20rem;
+ }

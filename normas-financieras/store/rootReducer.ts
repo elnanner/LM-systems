@@ -1,4 +1,6 @@
-import { combineReducers } from "redux";
+import { normasReducer } from "@/features/normas/reducer";
+import { NormasAction } from "@/features/normas/actions";
+import { combineReducers, Reducer, UnknownAction } from "redux";
 
 interface AppState {
     inicializado: boolean
@@ -11,5 +13,6 @@ function appReducer(state = initialAppState, action: { type: string }): AppState
 }
 
 export const rootReducer = combineReducers({
-  app: appReducer,
+    app: appReducer,
+    normas: normasReducer as Reducer<ReturnType<typeof normasReducer>, NormasAction | UnknownAction>
 })
